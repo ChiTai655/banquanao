@@ -1,0 +1,352 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*=============================header=========================*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    background-color: rgb(14, 13, 13);
+    padding: 2px 3px;
+
+}
+.container a:hover{
+    color: #EC4D37;
+}
+.container button:hover{
+    color: #EC4D37;
+}
+.container i:hover{
+    color: #EC4D37;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+nav ul li, a{
+    color: white;
+}
+nav ul li:nth-child(3){
+    position: relative;
+}
+nav ul li:nth-child(3) input{
+    height: 25px;
+    width: 300px;
+    border: none;
+    border-radius :5px ;
+}
+nav ul li:nth-child(3) i{
+    position: absolute;
+    font-size: 15px;
+    right: 12px;
+    color: rgb(73, 72, 72);
+    line-height: 30px;
+    
+}
+nav ul li:nth-child(4) button{
+    height: 30px;
+    padding: 0px 8px;
+    cursor: pointer;
+}
+nav ul li:nth-child(6) button{
+    height: 30px;
+    padding: 0px 8px;
+    cursor: pointer;
+}
+/*=============================menu=========================*/
+.menu{
+
+    background-color:#1D1B1B ;
+    padding: 3px 0;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(73, 72, 72);
+}
+/*=============================sub-menu=========================*/
+.menu-container ul li {
+    position: relative;
+}
+.sub-menu{
+    border-bottom:1px solid #EC4D37;
+    position: absolute;
+    background-color:#1D1B1B;
+    width: 300px;
+    height: auto;
+    left: 0;
+    padding: 12px;
+    display: none;
+}
+.sub-menu ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+.sub-menu ul li{
+    padding: 6px 0;
+}
+.menu-container ul li:hover .sub-menu{
+    display: block;
+}
+/*=============================Zoom-in=========================*/
+.zoomin img{
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+figure {
+    overflow: hidden;
+  }
+figure:hover{
+    bottom: -36px;
+    opacity: 1;
+}
+.zoomin figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.zoomin figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+/*=============================gay=========================*/
+.gay{
+    background-color:rgb(148, 147, 147) ;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+.gay ul{
+    display: flex;
+    color: black;
+}
+/*==============================slideshow==========================*/
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    max-width: 100%;
+    margin: auto;
+}
+.slide-wrapper {
+    width: 2912px;
+    animation: slide 10s ease infinite;
+}
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+@keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;}
+    80% {margin-left: -1456px;}
+}
+/*=============================row=========================*/
+.col-1{
+    text-align: center;
+    margin: auto;
+    color: grey;
+}
+.col-1th{
+    float: left;
+    max-width: auto;
+    margin: auto;
+}
+  .image img{
+    width: 1400px;
+  }
+  .gia{
+    text-align: center;
+    color: red;
+  }
+ /*=============================footer=========================*/
+ .col-1f {
+	flex: 0 0 100%;
+    max-width: 90%;
+}
+.col-2f{
+    flex: 0 0 20%;
+    width: 100%;
+}
+  footer {
+      display: block;
+      background-color: #1D1B1B;
+      max-width: 100%;
+      clear:both;
+      padding-bottom: 20px;
+      margin-top: 20px;
+  }
+.row-footer{
+      color:white;
+      text-align: center;
+      margin: auto;
+  }
+  .row-footer1{
+    color: white;
+    text-align: left;
+}
+.copy-right{
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+/*=============================content=========================*/
+.content{
+    max-width: 100% fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    grid-template-rows: 600px 600px 600px;
+    display: flex;
+    
+}
+.items img{
+    width: 260px;
+    height: 340px;
+}
+.items figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.items figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+/*=============================xem-chi-tiết=========================*/
+.small-content{
+    position: relative;
+    margin-left: 20px;
+}
+.imagee{
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.small-content:hover .imagee{
+    opacity: 0.3;
+}
+.small-content:hover .middle{
+    opacity: 1;
+}
+.text{
+    font-size: 20px;
+}
+.text a{
+    color: black;
+}
+/*=============================Giỏ-Hàng=========================*/
+.left-column{
+    width: 50%;
+    height: fit-content;
+    margin-bottom: 30px;
+    float: left;
+   
+}
+.right-column{
+    width: 50%;
+    height: fit-content;
+    margin-bottom: 30px;
+    float: right;
+    
+}
+.imageee img{
+    width: 100px ;
+    height: 120px;
+}
+.imageee th{
+    width: 100px;
+}
+span{
+    color: red;
+}
+.xoa td a:hover{
+    color: rgb(0, 26, 255);
+}
+.xoa td a{
+    color: black;
+}
+/**************************Keke*******************/
+.tt{
+    margin-left: 20px;
+}
+button.keke{
+    border: rgb(177, 174, 174);
+    padding: 5px 10px;
+    width: 260px;
+    height: 35px;
+    background-color: rgb(177, 174, 174);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+button.keke:hover{
+    background: rgb(0, 81, 255);
+    color:white;
+    font-size: 18px;
+}
+button.hehe{
+    border: rgb(177, 174, 174);
+    padding: 5px 10px;
+    width: 260px;
+    height: 35px;
+    background-color: rgb(177, 174, 174);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+button.hehe:hover{
+    background: orange;
+    color:white;
+    font-size: 18px;
+}
+/*=============================Lịch-sử-đơn-hàng=========================*/
+button.lsdonhang{
+    border: rgb(177, 174, 174);
+    padding: 5px 10px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(177, 174, 174);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+button.lsdonhang:hover{
+    background: orange;
+    color:white;
+    font-size: 18px;
+}
